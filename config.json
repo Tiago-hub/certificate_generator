@@ -1,0 +1,12 @@
+{
+    "GEFEL":{
+	"certificate": "./Templates/template-gefel.png",
+	"font": "./Fonts/PoetsenOne-Regular.ttf",
+	"h_offset": 0,
+	"v_offset": -550,
+	"email_details": {
+	    "subject": "Certificado palestra {lec_title} {lec_date} GEfel",
+	    "body": "Boa tarde,\nSegue em anexo o seu certificado para a palestra \"{lec_title}\" com o(a) médico(a) veterinário(a) {lecturer}, realizada no dia {lec_date}.\nAtenciosamente,\nDiretoria GEFel, Una Liberdade"
+	}
+    }
+}

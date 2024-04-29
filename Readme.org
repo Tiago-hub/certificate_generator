@@ -1,0 +1,9 @@
+# Requirements
+Python
+Pillow
+
+# How to use
+Call the script using python as:
+#+BEGIN_SRC bash
+  python3 main.py --model <one of the models defined in config.json>  --csv <path to csv file> --date <date of lecture> --title <title of lecture> --lecturer <name of lecturer>
+#+END_SRC
