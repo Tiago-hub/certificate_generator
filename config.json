@@ -4,9 +4,11 @@
 	"font": "./Fonts/PoetsenOne-Regular.ttf",
 	"h_offset": 0,
 	"v_offset": -550,
+	"sender_email": "gefel.unaliberdade@gmail.com",
+	"sender_app_password": "",
 	"email_details": {
 	    "subject": "Certificado palestra {lec_title} {lec_date} GEfel",
-	    "body": "Boa tarde,\nSegue em anexo o seu certificado para a palestra \"{lec_title}\" com o(a) médico(a) veterinário(a) {lecturer}, realizada no dia {lec_date}.\nAtenciosamente,\nDiretoria GEFel, Una Liberdade"
+	    "body": "Boa tarde,\nSegue em anexo o seu certificado para a palestra \"{lec_title}\" com o(a) medico(a) veterinario(a) {lecturer}, realizada no dia {lec_date}.\nAtenciosamente,\nDiretoria GEFel, Una Liberdade"
 	}
     }
 }

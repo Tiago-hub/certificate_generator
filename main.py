@@ -47,6 +47,9 @@ if __name__ == "__main__":
     email_details = config.get("email_details")
     email_subject = email_details.get("subject")
     email_body = email_details.get("body")
+    sender_email = config.get("sender_email")
+    sender_password = config.get("sender_app_password")
+
     certificate = Certificate(certificate, font, vertical_offset=v_offset) 
 
     name_list = []
@@ -75,8 +78,6 @@ if __name__ == "__main__":
             cert_path = cert.generate_certificate(name, f"{name}_certificado_gefel")
             certs_dict[name] = cert_path
 
-    sender_email = "tyago071@gmail.com"
-    sender_password = "tomq lhvr mwlk nhqg"
     with CustomMail(sender_email, sender_password) as mail:
         for name, cert in certs_dict.items():
             email = email_dict[name]

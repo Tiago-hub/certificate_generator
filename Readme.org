@@ -1,8 +1,11 @@
-# Requirements
+* Requirements
+** Python Dependencies
 Python
 Pillow
+** App password for gmail
+If you are using gmail you need an app password. Go to https://myaccount.google.com/apppasswords and set your app password. Get this password and paste in the config.json file in the "sender_app_password" key
 
-# How to use
+* How to use
 Call the script using python as:
 #+BEGIN_SRC bash
   python3 main.py --model <one of the models defined in config.json>  --csv <path to csv file> --date <date of lecture> --title <title of lecture> --lecturer <name of lecturer>
