@@ -26,6 +26,7 @@ if __name__ == "__main__":
     parser.add_argument("--date", dest="date_lec", help="The date of the lecture")
     parser.add_argument("--title", dest="title_lec", help="The title of lecture")
     parser.add_argument("--lecturer", dest="lecturer", help="The name of lecturer")
+    parser.add_argument("--no_mail", action="store_true", dest="no_mail", help="Flag to disable the email sending")
     args = parser.parse_args()
 
     configs = load_config()
@@ -77,6 +78,9 @@ if __name__ == "__main__":
         with certificate as cert:
             cert_path = cert.generate_certificate(name, f"{name}_certificado_gefel")
             certs_dict[name] = cert_path
+
+    if args.no_mail:
+        exit()
 
     with CustomMail(sender_email, sender_password) as mail:
         for name, cert in certs_dict.items():
